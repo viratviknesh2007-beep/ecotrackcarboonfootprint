@@ -141,9 +141,9 @@ const Onboarding: React.FC = () => {
                   <label className="text-sm font-medium text-foreground">Electricity Usage</label>
                   <select value={form.electricity} onChange={(e) => setForm({ ...form, electricity: e.target.value })}
                     className="w-full mt-1 px-4 py-2.5 rounded-lg bg-muted/50 border border-border text-foreground outline-none">
-                    <option value="low">Low (< 200 kWh/mo)</option>
-                    <option value="medium">Medium (200-500 kWh/mo)</option>
-                    <option value="high">High (> 500 kWh/mo)</option>
+                    <option value="low">{"Low (< 200 kWh/mo)"}</option>
+                    <option value="medium">{"Medium (200-500 kWh/mo)"}</option>
+                    <option value="high">{"High (> 500 kWh/mo)"}</option>
                   </select>
                 </div>
                 <div>
