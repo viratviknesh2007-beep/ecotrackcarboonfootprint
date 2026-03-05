@@ -4,323 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Electric Scooter</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Segoe UI', sans-serif;
-}
-
-body{
-background:linear-gradient(180deg,#c7d7df,#9fbac6);
-overflow-x:hidden;
-color:#111;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 80px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:35px;
-align-items:center;
-}
-
-nav a{
-text-decoration:none;
-color:#000;
-font-weight:600;
-font-size:14px;
-}
-
-.login{
-background:#7ea3b3;
-padding:6px 15px;
-border-radius:6px;
-}
-
-.logo img{
-width:45px;
-opacity:.9;
-}
-
-/* HERO */
-
-.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:60px 120px;
-min-height:80vh;
-}
-
-.hero-text p{
-letter-spacing:5px;
-font-size:13px;
-}
-
-.hero-text h1{
-font-size:70px;
-margin:10px 0;
-}
-
-.hero-text small{
-color:#444;
-}
-
-.hero button{
-margin-top:25px;
-padding:12px 28px;
-border:none;
-border-radius:20px;
-background:#6ab5a5;
-color:white;
-cursor:pointer;
-}
-
-.hero img{
-width:520px;
-animation:float 5s ease-in-out infinite;
-}
-
-/* floating animation */
-
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-20px)}
-100%{transform:translateY(0)}
-}
-
-/* INFO */
-
-.info{
-display:flex;
-gap:40px;
-margin-top:20px;
-color:#333;
-font-size:14px;
-}
-
-/* MAP SECTION */
-
-.map-section{
-text-align:center;
-padding:120px 20px;
-}
-
-.map-section h3{
-letter-spacing:6px;
-font-size:13px;
-}
-
-.map-section h1{
-font-size:38px;
-margin-top:10px;
-}
-
-.map-section img{
-width:700px;
-margin-top:50px;
-animation:float 6s infinite ease-in-out;
-}
-
-/* FEATURES */
-
-.features{
-padding:100px;
-text-align:center;
-}
-
-.features p{
-color:#555;
-margin-top:10px;
-}
-
-.feature-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
-max-width:750px;
-margin:auto;
-margin-top:40px;
-}
-
-.feature{
-background:#cfe0e7;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 20px rgba(0,0,0,0.08);
-transition:.3s;
-}
-
-.feature:hover{
-transform:translateY(-8px);
-}
-
-/* PRICING */
-
-.pricing{
-text-align:center;
-padding:100px 60px;
-}
-
-.price-grid{
-display:flex;
-justify-content:center;
-gap:40px;
-margin-top:50px;
-}
-
-.card{
-background:#d8e7ee;
-padding:35px;
-border-radius:12px;
-width:240px;
-box-shadow:0 10px 18px rgba(0,0,0,0.08);
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.card ul{
-list-style:none;
-text-align:left;
-margin:20px 0;
-}
-
-.card ul li{
-margin:8px 0;
-font-size:14px;
-}
-
-.price{
-font-size:28px;
-font-weight:bold;
-margin-bottom:10px;
-}
-
-.card button{
-padding:10px 20px;
-border:none;
-border-radius:15px;
-background:black;
-color:white;
-cursor:pointer;
-}
-
-/* CONTACT */
-
-.contact{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:100px 120px;
-}
-
-.contact-form{
-background:#9fbec9;
-padding:40px;
-border-radius:25px;
-width:360px;
-box-shadow:0 15px 25px rgba(0,0,0,0.08);
-}
-
-.contact-form h2{
-margin-bottom:20px;
-}
-
-.contact-form input{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:18px;
-border:1px solid #444;
-}
-
-.contact img{
-width:420px;
-animation:float 6s infinite ease-in-out;
-}
-
-/* FOOTER */
-
-footer{
-background:#8fb0bd;
-display:flex;
-justify-content:space-between;
-padding:40px 80px;
-margin-top:50px;
-}
-
-footer p{
-max-width:300px;
-}
-
-.sections{
-display:grid;
-grid-template-columns:repeat(2,120px);
-gap:10px;
-font-size:14px;
-}
-
-/* floating circles background */
-
-.circle{
-position:absolute;
-border-radius:50%;
-background:rgba(255,255,255,0.3);
-filter:blur(2px);
-}
-
-.circle1{
-width:140px;
-height:140px;
-top:150px;
-right:120px;
-}
-
-.circle2{
-width:80px;
-height:80px;
-top:210px;
-right:80px;
-}
-
-.circle3{
-width:120px;
-height:120px;
-bottom:200px;
-left:150px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:linear-gradient(180deg,#c7d7df,#9fbac6);overflow-x:hidden;color:#111}
+nav{display:flex;justify-content:space-between;align-items:center;padding:25px 80px}
+nav ul{display:flex;list-style:none;gap:35px;align-items:center}
+nav a{text-decoration:none;color:#000;font-weight:600;font-size:14px}
+.login{background:#7ea3b3;padding:6px 15px;border-radius:6px}
+.logo img{width:45px;opacity:.9}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:60px 120px;min-height:80vh}
+.hero-text p{letter-spacing:5px;font-size:13px}
+.hero-text h1{font-size:70px;margin:10px 0}
+.hero-text small{color:#444}
+.hero button{margin-top:25px;padding:12px 28px;border:none;border-radius:20px;background:#6ab5a5;color:white;cursor:pointer}
+.hero img{width:520px;animation:float 5s ease-in-out infinite}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}
+.info{display:flex;gap:40px;margin-top:20px;color:#333;font-size:14px}
+.map-section{text-align:center;padding:120px 20px}
+.map-section h3{letter-spacing:6px;font-size:13px}
+.map-section h1{font-size:38px;margin-top:10px}
+.map-section img{width:700px;margin-top:50px;animation:float 6s infinite ease-in-out}
+.features{padding:100px;text-align:center}
+.features p{color:#555;margin-top:10px}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;max-width:750px;margin:auto;margin-top:40px}
+.feature{background:#cfe0e7;padding:30px;border-radius:12px;box-shadow:0 10px 20px rgba(0,0,0,0.08);transition:.3s}
+.feature:hover{transform:translateY(-8px)}
+.pricing{text-align:center;padding:100px 60px}
+.price-grid{display:flex;justify-content:center;gap:40px;margin-top:50px}
+.card{background:#d8e7ee;padding:35px;border-radius:12px;width:240px;box-shadow:0 10px 18px rgba(0,0,0,0.08)}
+.card h3{margin-bottom:15px}
+.card ul{list-style:none;text-align:left;margin:20px 0}
+.card ul li{margin:8px 0;font-size:14px}
+.price{font-size:28px;font-weight:bold;margin-bottom:10px}
+.card button{padding:10px 20px;border:none;border-radius:15px;background:black;color:white;cursor:pointer}
+.contact{display:flex;align-items:center;justify-content:space-between;padding:100px 120px}
+.contact-form{background:#9fbec9;padding:40px;border-radius:25px;width:360px;box-shadow:0 15px 25px rgba(0,0,0,0.08)}
+.contact-form h2{margin-bottom:20px}
+.contact-form input{width:100%;padding:12px;margin:10px 0;border-radius:18px;border:1px solid #444}
+.contact img{width:420px;animation:float 6s infinite ease-in-out}
+footer{background:#8fb0bd;display:flex;justify-content:space-between;padding:40px 80px;margin-top:50px}
+footer p{max-width:300px}
+.sections{display:grid;grid-template-columns:repeat(2,120px);gap:10px;font-size:14px}
+.circle{position:absolute;border-radius:50%;background:rgba(255,255,255,0.3);filter:blur(2px)}
+.circle1{width:140px;height:140px;top:150px;right:120px}
+.circle2{width:80px;height:80px;top:210px;right:80px}
+.circle3{width:120px;height:120px;bottom:200px;left:150px}
 </style>
 </head>
-
 <body>
-
 <div class="circle circle1"></div>
 <div class="circle circle2"></div>
 <div class="circle circle3"></div>
-
-<!-- NAVBAR -->
-
 <nav>
-
-<div class="logo">
-<img src="logo.png">
-</div>
-
+<div class="logo"><img src="/task1/logo.png"></div>
 <ul>
 <li><a href="#">HOME</a></li>
 <li><a href="#">PRODUCTS</a></li>
@@ -328,15 +64,9 @@ left:150px;
 <li><a href="#">CONTACT</a></li>
 <li><a class="login" href="#">LOGIN</a></li>
 </ul>
-
 </nav>
-
-<!-- HERO -->
-
 <section class="hero">
-
 <div>
-
 <div class="hero-text">
 <p>LET'S RIDE THE</p>
 <h1>FUTURE</h1>
@@ -344,148 +74,51 @@ left:150px;
 <br>
 <button>BUY NOW</button>
 </div>
-
 <div class="info">
 <div>50 km/hr<br>speed</div>
 <div>80km<br>battery range</div>
 <div>3.5 hr<br>charging time</div>
 </div>
-
 </div>
-
-<img src="scooter.png">
-
+<img src="/task1/scooter.png">
 </section>
-
-<!-- MAP -->
-
 <section class="map-section">
-
 <h3>BOOK TEST DRIVE</h3>
 <h1>ACROSS WORLD</h1>
-
-<img src="map.png">
-
+<img src="/task1/map.png">
 </section>
-
-<!-- FEATURES -->
-
 <section class="features">
-
 <h2>Feature Boxes</h2>
 <p>A good design is not only aesthetically pleasing but also functional.</p>
-
 <div class="feature-grid">
-
-<div class="feature">
-<h3>Fully Customizable</h3>
-<p>Adjust design and functionality easily.</p>
+<div class="feature"><h3>Fully Customizable</h3><p>Adjust design and functionality easily.</p></div>
+<div class="feature"><h3>Battery Efficient</h3><p>High performance battery technology.</p></div>
+<div class="feature"><h3>Modern Design</h3><p>Sleek minimal futuristic design.</p></div>
+<div class="feature"><h3>Smart Technology</h3><p>Integrated monitoring and controls.</p></div>
 </div>
-
-<div class="feature">
-<h3>Battery Efficient</h3>
-<p>High performance battery technology.</p>
-</div>
-
-<div class="feature">
-<h3>Modern Design</h3>
-<p>Sleek minimal futuristic design.</p>
-</div>
-
-<div class="feature">
-<h3>Smart Technology</h3>
-<p>Integrated monitoring and controls.</p>
-</div>
-
-</div>
-
 </section>
-
-<!-- PRICING -->
-
 <section class="pricing">
-
 <h2>Our Best Prices</h2>
-
 <div class="price-grid">
-
-<div class="card">
-<h3>Custom Package</h3>
-<div class="price">$70</div>
-<ul>
-<li>HD camera template</li>
-<li>No licence required</li>
-<li>Priority support</li>
-<li>Premium features</li>
-</ul>
-<button>Book now</button>
+<div class="card"><h3>Custom Package</h3><div class="price">$70</div><ul><li>HD camera template</li><li>No licence required</li><li>Priority support</li><li>Premium features</li></ul><button>Book now</button></div>
+<div class="card"><h3>Silver Package</h3><div class="price">$40</div><ul><li>HD camera template</li><li>No licence required</li><li>Priority support</li><li>Premium features</li></ul><button>Book now</button></div>
+<div class="card"><h3>Premium Package</h3><div class="price">$120</div><ul><li>HD camera template</li><li>No licence required</li><li>Priority support</li><li>Premium features</li></ul><button>Book now</button></div>
 </div>
-
-<div class="card">
-<h3>Silver Package</h3>
-<div class="price">$40</div>
-<ul>
-<li>HD camera template</li>
-<li>No licence required</li>
-<li>Priority support</li>
-<li>Premium features</li>
-</ul>
-<button>Book now</button>
-</div>
-
-<div class="card">
-<h3>Premium Package</h3>
-<div class="price">$120</div>
-<ul>
-<li>HD camera template</li>
-<li>No licence required</li>
-<li>Priority support</li>
-<li>Premium features</li>
-</ul>
-<button>Book now</button>
-</div>
-
-</div>
-
 </section>
-
-<!-- CONTACT -->
-
 <section class="contact">
-
 <div class="contact-form">
-
 <h2>To contact</h2>
-
 <input type="text" placeholder="your mail">
 <input type="text" placeholder="name">
 <input type="text" placeholder="address">
-
 </div>
-
-<img src="scooter.png">
-
+<img src="/task1/scooter.png">
 </section>
-
-<!-- FOOTER -->
-
 <footer>
-
-<p>
-A good design is not only aesthetically pleasing,
-but also functional. It should be able to solve the problem.
-</p>
-
+<p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem.</p>
 <div class="sections">
-<span>Home</span>
-<span>Section One</span>
-<span>Section Two</span>
-<span>Section Three</span>
-<span>Section Four</span>
-<span>Section Five</span>
+<span>Home</span><span>Section One</span><span>Section Two</span><span>Section Three</span><span>Section Four</span><span>Section Five</span>
 </div>
-
 </footer>
-
 </body>
 </html>
