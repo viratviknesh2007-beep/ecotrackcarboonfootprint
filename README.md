@@ -2,10 +2,11 @@ ECOTRACK-CARBON-FOOTPRINT SIMULATOR
 
 WEBSITE LINK: https://ecotrack-carbon-footprint.netlify.app/
 
-CREATED A WEBSITE USING AI APPLICATIONS LIKE LOVABLE AND THEN CONVERTED THAT DOMAIN INTO NETIFY,COM USING NETIFY APP 
+Created a website using AI applications like Lovable and then converted the domain into Netlify.com using the Netlify app.
 
-THIS APLICATION IS BULT FOR AN COMPETATION FOR CHEAT BETTER WHERE WE ARE GIVEN WITH MINIMUM REQUIRMENTS THAT ARE NEEDED TO BE ADDED IN OUR WEBSITE WITH THE TIME LIMITS AND THE INTERRUPTIONS 
+This application was built for a competition called Cheat Better, where we were given with minimum requirements that needed to be added to our website within specified time limits and interruptions.
 
-ALSO THAT WE ARE GIVEN WITH A SCREENSHOT OF A WEBSITE AND WE NEED TO MAKE A REPLICA OF THAT AND NEED TO INTEGRATE WITH OUR MAIN WEBSITE AS A TASK 1
+Also, we were given with a screenshot of a website, and we needed to create a replica of it and integrate it with our main website as Task 1.
 
-IN THIS COMPEATATION WE TRIED OUR BEST AND GOT A PARTICIPTATION CERTIFICATE 
+In this competition, we tried our best and received a Participation Certificate.
+
